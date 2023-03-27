@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test_001 : MonoBehaviour
+public class Test_002 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,7 @@ public class Test_001 : MonoBehaviour
         Debug.Log(answer2);    //Cosole.loe() answer2 값을 보여줌
 
 
-        answer 2 += 5;        //answer2 =answer2 + 5 의 축약
+        answer += 5;        //answer2 =answer2 + 5 의 축약
         Debug.Log(answer2);   //Console.log() answer2 값을 보여줌
 
        answer2++;              //answer2 = answer2 + 1의 축약 보통 반복문에서 1씩 더해서  처리할때 쓰임
