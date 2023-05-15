@@ -4,7 +4,18 @@ using UnityEngine;
 
 public class ProjectileMove : MonoBehaviour
 {
-    public Vector3 launchDirection;
+    public enum PROJECTILETYPE
+    {
+        PLAYER,
+        ENENY
+
+    }
+
+
+    
+   public Vector3 launchDirection;
+    public PROJECTILETYPE projectileType = PROJECTILETYPE.PLAYER;
+
 
     private void OnCollisionEnter(Collision collision)
     {
