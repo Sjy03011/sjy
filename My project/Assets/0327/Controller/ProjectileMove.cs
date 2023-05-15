@@ -42,12 +42,16 @@ public class ProjectileMove : MonoBehaviour
             Destroy(this.gameObject);
 
         }
-        if (other.gameObject.tag == "Monster")
+        if (other.gameObject.tag == "Monster" && projectileType == PROJECTILETYPE.PLAYER)
         {
             other.gameObject.GetComponent<MonsterController>().Damanged(1);
             Destroy(this.gameObject);
+        }
 
-
+        if (other.gameObject.tag == "Player" && projectileType == PROJECTILETYPE.ENENY)
+        {
+            other.gameObject.GetComponent<PlayerController>().Damaged(1);
+            Destroy(this.gameObject);
         }
 
     }
